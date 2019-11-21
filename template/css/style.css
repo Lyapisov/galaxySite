@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 
 body{
-    background-image: url("/images/back1.jpg");
+    background-image: url("/template/images/back1.jpg");
     background-repeat: repeat;
     background-position: center;
 }

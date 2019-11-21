@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>My first html</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/template/css/style.css">
 </head>
 <body>
 <div id="page">
@@ -29,7 +29,7 @@
     </div>
     <div id="header">
         <a class="logo" href="/" name="Логотип">
-            <img src="images/logo.png" alt="Логотип">
+            <img src="/template/images/logo.png" alt="Логотип">
         </a>
 
         <p id="label">
@@ -45,7 +45,7 @@
             <h1>Мастер-класс по изобразительному искусству</h1>
 
             <p>
-                <img src="/images/1.jpg">
+                <img src="/template/images/1.jpg">
                 Человек соприкасается с искусством каждый день. С самого рождения и на протяжении всей своей жизни люди погружены в искусство.
                 Отели, вокзалы, магазины, костюмы, ювелирные украшения, даже прически могут быть произведениями искусства.
                 Но могут и не быть. Далеко не каждую картину, скульптуру или дворец считают шедеврами. Как отличить произведение искусства от ремесленных поделок?
