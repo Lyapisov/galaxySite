@@ -1,5 +1,6 @@
 <?php
 return array(
-  'index.php' => 'site/index',
-  '' => 'site/index',
+    'user' => 'user/login',
+    'index' => 'site/index',
+    '' => 'site/index',
 );

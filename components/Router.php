@@ -9,7 +9,7 @@
 class Router{
 
     private $routes;
-    //Присваиваем, при создании в index.php объекта Роутер,
+    //Присваиваем, при создании в login.php объекта Роутер,
     //свойству роутес массив с маршрутами.
     public function __construct(){
 

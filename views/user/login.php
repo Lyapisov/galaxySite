@@ -44,39 +44,14 @@
         </form> -->
     </div>
 
-
-    <div id="content">
-        <?php foreach ($newsInfo as $info): ?>
-        <div id="article">
-            <h1><?php echo $info['name']; ?></h1>
-            <p>
-                <img src="/template/images/1.jpg">
-                <?php echo $info['content']; ?>
-            </p>
-        </div>
-        <?php endforeach; ?>
-        <div id="sitebar">
-            <ul id="menubar">
-                <li><a href="#">ИЗО</a></li>
-                <li><a href="#">Лепка</a></li>
-                <li><a href="#">Английский</a></li>
-                <li><a href="#">Вышивание</a></li>
-                <li><a href="#">Другое</a></li>
-            </ul>
-        </div>
+    <div class="user">
+        <h2>Войдите на сайт</h2>
+        <form class="formlogin" action="#" method="post">
+        <input type="email" mame="email" placeholder="E-mail">
+        <input type="password" mame="password" placeholder="password">
+        <input id="submit" type="submit" mame="submit" value="Войти">
+            <p>или пройдите<br><a href="#">Регистрацию</a></p>
+        </form>
     </div>
-    <?php foreach ($newsInfo as $info): ?>
-    <div id="footer">
-        <p>
-            Автор: <?php echo $info['author'] ?>. Дата: <?php echo $info['date'] ?>г. Тема: Изобразительное искусство.
-        </p>
-    </div>
-    <?php endforeach; ?>
-</div>
-<!-- <div id="fixed">
-    <div class="modal-body">
-        <p>Контентик</p>
-    </div>
-</div> -->
 </body>
 </html>
