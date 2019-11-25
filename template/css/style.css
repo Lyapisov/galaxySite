@@ -71,12 +71,11 @@ body{
 }
 
 #login {
-    margin-left: 70px;
+    margin-right: 70px;
 }
 
 #navigation ul li a:hover{
     background: #e1431f;
-    text-decoration: underline;
 }
 
 #navigation .dropdown {
@@ -164,6 +163,7 @@ body{
 }
 
 #article p{
+    text-align: justify;
     padding-top: 10px;
     text-indent: 20px;
     color: #151515;
@@ -173,7 +173,7 @@ body{
 
 #article img{
     float: left;
-    padding: 0px 15px 0px 5px;
+    padding: 0px 15px 15px 0px;
 }
 
 #sitebar li{
@@ -219,10 +219,17 @@ body{
 }
 
 #footer {
+
     width: 730px;
-    padding-top: 40px;
+    padding-top: 0px;
+    padding-bottom: 20px;
     float: right;
     color: #6c7373;
+
+}
+
+#footer p{
+    font-size: 12px;
 }
 
 .user {
