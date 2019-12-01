@@ -1,9 +1,41 @@
-#carousel {
-    height: 250px;
+.photo_gallery {
+    overflow: hidden;
+    position: relative;
 }
 
-#carousel a {
-    position: absolute;
-    float: left;
+.cycle-slideshow {
+    height: 250px;
+    text-align: center;
 
+}
+
+.cycle-slideshow img {
+    padding: 40px 10px 10px 10px;
+}
+
+#recommended-item-carousel .carousel-inner .item {
+    padding-left: 0;
+}
+
+.recommended-item-control {
+    position: absolute;
+    top: 41%;
+}
+
+.recommended-item-control i {
+    background: none repeat scroll 0 0 #e1431f;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 4px 10px;
+}
+
+.recommended-item-control i:hover {
+    background: #ccccc6;
+}
+
+.left {
+    left: 30px;
+}
+.right {
+    right: 30px;
 }

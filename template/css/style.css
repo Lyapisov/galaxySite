@@ -51,16 +51,16 @@ body{
     list-style-position: outside ;
 }
 
-#navigation {
+.navigation {
     height: 40px;
 }
 
-#navigation ul li {
+.navigation ul li {
     float: left;
     position: relative;
 }
 
-#navigation ul li a {
+.navigation ul li a {
     padding: 0 15px;
     font-family: David;
     text-decoration: none;
@@ -74,11 +74,11 @@ body{
     margin-right: 70px;
 }
 
-#navigation ul li a:hover{
+.navigation ul li a:hover{
     background: #e1431f;
 }
 
-#navigation .dropdown {
+.navigation .dropdown {
     position: absolute;
     top: 100%;
     width: 150px;
@@ -86,15 +86,15 @@ body{
     z-index: 2;
 }
 
-#navigation li:hover .dropdown{
+.navigation li:hover .dropdown{
     display: block;
 }
 
-#navigation .dropdown li{
+.navigation .dropdown li{
     width: 100%;
 }
 
-#navigation .dropdown li a{
+.navigation .dropdown li a{
     line-height: 40px;
     height: 40px;
 }
@@ -234,11 +234,20 @@ body{
 
 .user {
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 50%;
     margin-left: -150px;
     float: left;
     width: 300px;
+    font-size: 20px;
+    font-family: "Ruslan Display", cursive;
+}
+.user-admin {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    float: left;
+    width: 900px;
     font-size: 20px;
     font-family: "Ruslan Display", cursive;
 }
@@ -280,3 +289,4 @@ body{
     color: #ff4b1c;
     text-decoration: underline;
 }
+

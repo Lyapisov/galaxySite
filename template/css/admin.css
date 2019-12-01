@@ -1,0 +1,49 @@
+.admin-width{
+    width: 1100px;
+}
+
+.admin {
+    text-align: center;
+    font-size: 14px;
+    font-family: David;
+    padding: 5px;
+    border: 1px solid #595f5f;
+    border-collapse: collapse;
+}
+
+.admin th {
+    border: 1px solid #595f5f;
+    padding: 5px;
+}
+
+.admin td {
+    border: 1px solid #595f5f;
+    padding: 5px;
+}
+
+.admin td div{
+    padding: 5px;
+    height: 100px;
+}
+
+#text-content {
+    width: 350px;
+    overflow: scroll;
+}
+
+.create p{
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.create select{
+    width: 150px;
+    height: 30px;
+}
+
+.create form input{
+    width: 500px;
+    height: auto;
+}
+

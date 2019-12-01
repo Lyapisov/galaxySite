@@ -8,28 +8,34 @@
         </p>
     </div>
 
-    <div id="carousel"
-         data-cycle-fx=carousel
-         data-cycle-timeout=5000
-         data-cycle-carousel-visible=3
-         data-cycle-carousel-fluid=true
-         data-cycle-slides="div.item"
-         data-cycle-prev="#prev"
-         data-cycle-next="#next"
-    >
-        <?php foreach ($photoGallery as $photo): ?>
-            <a href="/photo/<?php echo $photo['id']; ?>">
-            <img src="<?php echo Photo::getImage($photo['id']); ?>" alt="" />
-            </a><br/><br/>
-            <a href="#" data-id="<?php echo $photo['id']; ?>"> </a>
-        <?php endforeach; ?>
+    <div class="photo_gallery">
 
-        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev" id="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next" id="next">
-            <i class="fa fa-angle-right"></i>
-        </a>
+        <div class="cycle-slideshow"
+             data-cycle-fx=carousel
+             data-cycle-timeout=5000
+             data-cycle-carousel-visible=2
+             data-cycle-carousel-fluid=true
+             data-cycle-slides="div.carousell"
+             data-cycle-prev="#prev"
+             data-cycle-next="#next"
+        >
+                <div class="carousell">
+                    <div class="item1">
+                    <?php foreach ($photoGallery as $photo): ?>
+                        <a href="/photo/<?php echo $photo['id']; ?>">
+                        <img src="<?php echo Photo::getImage($photo['id']); ?>" alt="" />
+                        </a>
+                    <?php endforeach; ?>
+                    </div>
+                </div>
+
+                <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev" id="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next" id="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+        </div>
     </div>
 
     <div id="content">

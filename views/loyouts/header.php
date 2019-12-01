@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="page">
-    <div id="navigation">
+    <div class="navigation">
         <p>
         <ul id="styles">
             <li><a href="/">Главная</a></li>
