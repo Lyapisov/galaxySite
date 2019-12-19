@@ -6,9 +6,9 @@
                 Выберите пункт:
                 <br><br>
                 <ul>
-                <li><a href="admin/news">Работа с новостями сайта</a></li>
-                <li><a href="admin/photo">Работа с фотографиями ленты</a></li>
-                <li><a href="admin/category">Работа с категориями</a></li>
+                <li><a href="/admin/news">Работа с новостями сайта</a></li>
+                <li><a href="/admin/photo">Работа с фотографиями ленты</a></li>
+                <li><a href="/admin/category">Работа с категориями</a></li>
                 </ul>
             </p>
         </div>

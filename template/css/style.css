@@ -146,13 +146,13 @@ body{
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
-#article {
+.article {
     width: 730px;
     padding-left: 30px;
     float: right;
 }
 
-#article h1 {
+.article h1 {
     font-family: "Ruslan Display", cursive;
     font-size: 22px;
     font-weight: bold;
@@ -162,7 +162,7 @@ body{
     text-indent: 20px;
 }
 
-#article p{
+.article p{
     text-align: justify;
     padding-top: 10px;
     text-indent: 20px;
@@ -171,7 +171,7 @@ body{
     font-size: 18px;
 }
 
-#article img{
+.article img{
     float: left;
     padding: 0px 15px 15px 0px;
 }

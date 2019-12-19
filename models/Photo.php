@@ -43,4 +43,15 @@ class Photo{
         }
         return $photoGallery;
     }
+
+    public static function getRelativePath(int $id): string
+    {
+        $uploadedPath = $_SERVER['DOCUMENT_ROOT']. "/template/images/newsPhoto/{$id}.jpg";
+
+        if (is_file($uploadedPath)) {
+            return "/template/images/newsPhoto/{$id}.jpg";
+        }
+
+        return "/template/images/1.jpg";
+    }
 }

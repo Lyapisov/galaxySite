@@ -23,7 +23,7 @@
                     <div class="item1">
                     <?php foreach ($photoGallery as $photo): ?>
                         <a href="/photo/<?php echo $photo['id']; ?>">
-                        <img src="<?php echo Photo::getImage($photo['id']); ?>" alt="" />
+                        <img src="<?php echo Photo::getImage($photo['id']); ?>"  alt="" />
                         </a>
                     <?php endforeach; ?>
                     </div>
@@ -39,20 +39,22 @@
     </div>
 
     <div id="content">
-        <div id="article">
-            <?php foreach ($newsInfo as $info): ?>
+        <?php foreach ($newsInfo as $info): ?>
+        <div class="article" id="article-<?= $info['id'] ?>">
             <h1><?php echo $info['name']; ?></h1>
-            <p>
-                <img src="/template/images/1.jpg">
-                <?php echo $info['content']; ?>
-            </p>
-                <div id="footer">
-                    <p>
-                        Автор: <?php echo $info['author'] ?>. Дата: <?php echo $info['date'] ?>г. Тема: Изобразительное искусство.
-                    </p>
-                </div>
-            <?php endforeach; ?>
+                <p>
+                    <img src="<?= Photo::getRelativePath($info['id']) ?>" width="250">
+                    <?php echo $info['content']; ?>
+                </p>
+
+            <div id="footer">
+                <p>
+                    Автор: <?php echo $info['author'] ?>. Дата: <?php echo $info['date'] ?>г. Тема: Изобразительное искусство.
+                </p>
+            </div>
         </div>
+            <?php endforeach; ?>
+
         <div id="sitebar">
             <ul id="menubar">
                 <li><a href="#">ИЗО</a></li>

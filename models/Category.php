@@ -20,4 +20,24 @@ class Category{
                 break;
         }
     }
+
+    public static function getCategoryByAdmin(){
+
+        $db = Db::getConnectDb();
+        $sql = "SELECT * FROM category ORDER BY news_type ASC";
+
+        $result = $db->query($sql);
+
+        $categoryList = array();
+
+        $i = 0;
+        while ($row = $result->fetch()){
+            $categoryList[$i]['id'] = $row['id'];
+            $categoryList[$i]['name'] = $row['name'];
+            $categoryList[$i]['news_type'] = $row['news_type'];
+            $categoryList[$i]['status'] = $row['status'];
+        $i++;
+        }
+        return $categoryList;
+    }
 }

@@ -27,8 +27,8 @@
                 <td><?php echo $news['date']; ?></td>
                 <td><?php echo $news['author']; ?></td>
                 <td><?php echo News::getStatusNews($news['visibility']); ?></td>
-                <td><a href="/admin/news/update/<?php echo $category['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href="/admin/news/delete/<?php echo $category['id']; ?>" title="Удалить"><i class="fa fa-times"></i></a></td>
+                <td><a href="/admin/news/update/<?php echo $news['id']; ?>" title="Редактировать"><i class="fa fa-pencil-square-o"></i></a></td>
+                <td><a href="/admin/news/delete/<?php echo $news['id']; ?>" title="Удалить"><i class="fa fa-times"></i></a></td>
             </tr>
                 <?php endforeach; ?>
         </table>
