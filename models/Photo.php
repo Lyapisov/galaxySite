@@ -36,8 +36,7 @@ class Photo{
         $i = 0;
         while ($row = $result->fetch()) {
             $photoGallery[$i]['id'] = $row['id'];
-            $photoGallery[$i]['name'] = $row['id'];
-            $photoGallery[$i]['path'] = $row['path'];
+            $photoGallery[$i]['name'] = $row['name'];
             $photoGallery[$i]['category'] = $row['category'];
             $i++;
         }
@@ -52,6 +51,35 @@ class Photo{
             return "/template/images/newsPhoto/{$id}.jpg";
         }
 
-        return "/template/images/1.jpg";
+        return "/template/images/newsPhoto/no-image.jpg";
+    }
+
+    public static function getRelativePathForPhotolist(int $id): string
+    {
+        $uploadedPath = $_SERVER['DOCUMENT_ROOT']. "/template/images/photolist/{$id}.jpg";
+
+        if (is_file($uploadedPath)) {
+            return "/template/images/photolist/{$id}.jpg";
+        }
+
+        return "/template/images/photolist/no-image.jpg";
+    }
+
+    public static function createPhoto($options){
+
+        $db = Db::getConnectDb();
+        $sql = "INSERT INTO photo_gallery (name, category, date, visibility)" .
+            "VALUES (:name, :category, :date, :visibility)";
+        $result = $db->prepare($sql);
+
+        $result->bindParam(':name', $options['name'], PDO::PARAM_STR);
+        $result->bindParam(':category', $options['category'], PDO::PARAM_INT);
+        $result->bindParam(':date', $options['date'], PDO::PARAM_INT);
+        $result->bindParam(':visibility', $options['visibility'], PDO::PARAM_INT);
+
+        if($result->execute()){
+            return $db->lastInsertId();
+        }
+        return 0;
     }
 }

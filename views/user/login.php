@@ -1,7 +1,7 @@
 <?php require_once ROOT . '/views/loyouts/header.php';?>
     <div id="header">
         <a class="logo" href="/" name="Логотип">
-            <img src="/template/images/logo.png" alt="Логотип">
+            <img src="/template/images/logogalaxy.png" alt="Логотип">
         </a>
 
         <p id="label">

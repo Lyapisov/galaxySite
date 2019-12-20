@@ -13,8 +13,9 @@ return array(
     'admin/news/delete/([0-9]+)' => 'adminNews/delete/$1',
     'admin/news' => 'adminNews/index',
 
-    'admin/photo' => 'adminPhoto/index',
     'admin/photo/create' => 'adminPhoto/create',
+    'admin/photo' => 'adminPhoto/index',
+
 
     'admin/category' => 'adminCategory/index',
 

@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <script src="/template/js/jquery.js"></script>
+
     <script src="/template/js/jquery.cycle2.min.js"></script>
     <script src="/template/js/jquery.cycle2.carousel.min.js"></script>
+
+    <script src="/template/js/bootstrap.min.js"></script>
+    <script src="/template/js/jquery.scrollUp.min.js"></script>
+    <script src="/template/js/price-range.js"></script>
+    <script src="/template/js/jquery.prettyPhoto.js"></script>
+    <script src="/template/js/main.js"></script>
+
     <meta charset="utf-8">
     <title>Galaxy</title>
     <link rel="stylesheet" href="/template/css/style.css">

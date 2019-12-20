@@ -16,7 +16,7 @@
     <div class="navigation">
         <p>
         <ul id="styles">
-            <li><a href="admin/index"><i class="fa fa-info"></i> Админпанель</a></li>
+            <li><a href="/admin/index"><i class="fa fa-info"></i> Админпанель</a></li>
             <li><a href="/"><i class="fa fa-power-off"></i> Выход на сайт</a></li>
         </ul>
         </p>

@@ -22,9 +22,11 @@ time, mark, audio, video {
 }
 
 body{
-    background-image: url("/template/images/back1.jpg");
-    background-repeat: repeat;
-    background-position: center;
+    background: linear-gradient(to bottom right, rgb(0, 12, 56), rgb(193, 195, 207));
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 100%;
 }
 
 #page {
@@ -53,6 +55,8 @@ body{
 
 .navigation {
     height: 40px;
+    background: linear-gradient(to bottom right, rgb(0, 12, 1), rgb(193, 195, 207));
+
 }
 
 .navigation ul li {
@@ -67,7 +71,7 @@ body{
     line-height: 40px;
     display: block;
     height: 40px;
-    color: #151515;
+    color: #eeeeee;
 }
 
 #login {

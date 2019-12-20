@@ -1,7 +1,7 @@
 <?php require_once ROOT . '/views/loyouts/header.php';?>
     <div id="header">
         <a class="logo" href="/" name="Логотип">
-            <img src="/template/images/logo.png" alt="Логотип">
+            <img src="/template/images/logogalaxy.png" alt="Логотип">
         </a>
         <p id="label">
             ГАЛАКТИКА
@@ -13,26 +13,29 @@
         <div class="cycle-slideshow"
              data-cycle-fx=carousel
              data-cycle-timeout=5000
-             data-cycle-carousel-visible=2
+             data-cycle-carousel-visible=3
              data-cycle-carousel-fluid=true
-             data-cycle-slides="div.carousell"
+             data-cycle-slides="div.photo"
              data-cycle-prev="#prev"
              data-cycle-next="#next"
         >
                 <div class="carousell">
                     <div class="item1">
-                    <?php foreach ($photoGallery as $photo): ?>
+                        <?php foreach ($photoGallery as $photo): ?>
+                        <div class="photo">
+
                         <a href="/photo/<?php echo $photo['id']; ?>">
-                        <img src="<?php echo Photo::getImage($photo['id']); ?>"  alt="" />
+                        <img src="<?php echo Photo::getRelativePathForPhotolist($photo['id']); ?>"  alt="" height="170"/>
                         </a>
+                        </div>
                     <?php endforeach; ?>
                     </div>
                 </div>
 
-                <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev" id="prev">
+                <a class="left recommended-item-control" href="#" data-slide="prev" id="prev">
                     <i class="fa fa-angle-left"></i>
                 </a>
-                <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next" id="next">
+                <a class="right recommended-item-control" href="#" data-slide="next" id="next">
                     <i class="fa fa-angle-right"></i>
                 </a>
         </div>
