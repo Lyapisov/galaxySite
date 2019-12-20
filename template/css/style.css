@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 
 body{
-    background: linear-gradient(to bottom right, rgb(0, 12, 56), rgb(193, 195, 207));
+    background: linear-gradient(to bottom right, rgb(131, 151, 225), rgb(193, 195, 207));
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -55,8 +55,7 @@ body{
 
 .navigation {
     height: 40px;
-    background: linear-gradient(to bottom right, rgb(0, 12, 1), rgb(193, 195, 207));
-
+    background: linear-gradient(to top, rgb(193, 195, 207), rgb(101, 101, 101));
 }
 
 .navigation ul li {
@@ -71,7 +70,7 @@ body{
     line-height: 40px;
     display: block;
     height: 40px;
-    color: #eeeeee;
+    color: #000000;
 }
 
 #login {
@@ -101,6 +100,10 @@ body{
 .navigation .dropdown li a{
     line-height: 40px;
     height: 40px;
+}
+
+.navigation .instagram{
+    margin-left: 75px;
 }
 
 #header {

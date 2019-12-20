@@ -34,14 +34,16 @@
                     <li><a href="#">Вышивание</a></li>
                 </ul>
             </li>
-            <li><a href="#">Фотогаллерея</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a id="login" href="#">Контакты</a></li>
+            <li><a href="/site/photogalery/">Фотогаллерея</a></li>
+            <li><a href="/site/aboutUs/">О нас</a></li>
+            <li><a id="login" href="/site/contacts/">Контакты</a></li>
             <?php if (User::isGuest()): ?>
             <li><a href="/user/login/"><i class="fa fa-lock"></i> Вход</a></li>
+            <li class="instagram">  <a href="https://www.instagram.com/studiya_galaktika/?hl=ru"><i class="fa fa-instagram"></i></a></li>
             <?php else: ?>
             <li><a href="/cabinet/"><i class="fa fa-user"></i> Аккаунт</a></li>
             <li><a href="/user/logout/"><i class="fa fa-unlock"></i> Выход</a></li>
+            <li class="instagram">  <a href="https://www.instagram.com/studiya_galaktika/?hl=ru"><i class="fa fa-instagram"></i></a></li>
             <?php endif; ?>
         </ul>
         </p>

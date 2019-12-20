@@ -21,6 +21,10 @@ return array(
 
     'admin' => 'admin/index',
 
+    'site/contacts' => 'site/contacts',
+    'site/aboutUs' => 'site/aboutUs',
+    'site/photogalery' => 'site/photogalery',
+
     'index' => 'site/index',
     '' => 'site/index',
 );
