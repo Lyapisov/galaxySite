@@ -23,7 +23,7 @@
                 <td><?php echo $news['name']; ?></td>
                 <td><?php echo Category::getCategory($news['category']); ?></td>
                 <td id="text-content"><div><?php echo $news['content']; ?></div></td>
-                <td><?php echo $news['photo']; ?></td>
+                <td><img src="<?php echo Photo::getRelativePathForPhotolist($news['id']); ?>"  alt="" height="70"/></td>
                 <td><?php echo $news['date']; ?></td>
                 <td><?php echo $news['author']; ?></td>
                 <td><?php echo News::getStatusNews($news['visibility']); ?></td>

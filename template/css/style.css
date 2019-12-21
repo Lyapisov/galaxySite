@@ -58,6 +58,10 @@ body{
     background: linear-gradient(to top, rgb(193, 195, 207), rgb(101, 101, 101));
 }
 
+.navigation ul{
+    background: linear-gradient(to top, rgb(101, 101, 101), rgb(193, 195, 207));
+}
+
 .navigation ul li {
     float: left;
     position: relative;
@@ -78,13 +82,13 @@ body{
 }
 
 .navigation ul li a:hover{
-    background: #e1431f;
+    background: linear-gradient(to top, rgb(255, 137, 79), rgb(225, 67, 31));
 }
 
 .navigation .dropdown {
     position: absolute;
     top: 100%;
-    width: 150px;
+    width: 134px;
     display: none;
     z-index: 2;
 }
