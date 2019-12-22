@@ -1,11 +1,11 @@
     <?php require_once ROOT . '/views/loyouts/header_admin.php';?>
-        <div class="user user-admin">
-            <div class="admin-width">
-                <h4>Действительно удалить категорию?</h4>
+        <div class="backForCabinet adminBack">
+            <div class="user user-admin">
+                    <h4>Действительно удалить категорию?</h4>
+                <form action="#" method="post">
+                    <input type="submit"  name="submit" value="Да">
+                </form>
             </div>
-            <form action="#" method="post">
-                <input type="submit"  name="submit" value="Да">
-            </form>
         </div>
     </body>
 </html>

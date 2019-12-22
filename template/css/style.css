@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 
 body{
-    background: linear-gradient(to bottom right, rgb(131, 151, 225), rgb(193, 195, 207));
+    background-image: url("/template/images/back1.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -30,6 +30,9 @@ body{
 }
 
 #page {
+    background: linear-gradient(to top, rgb(101, 101, 101), rgb(193, 195, 207));
+    background-repeat: no-repeat;
+    background-position: 0px 500px;
     width: 900px;
     margin: 0 auto;
     position: relative;
@@ -244,6 +247,7 @@ body{
 }
 
 .user {
+
     position: absolute;
     top: 200px;
     left: 50%;
@@ -255,8 +259,8 @@ body{
 }
 .user-admin {
     position: absolute;
-    top: 150px;
-    left: 100px;
+    top: 50px;
+    left: 160px;
     float: left;
     width: 900px;
     font-size: 20px;
@@ -301,3 +305,9 @@ body{
     text-decoration: underline;
 }
 
+.backForCabinet {
+
+    background: linear-gradient(to top, rgb(101, 101, 101), rgb(193, 195, 207));
+    height: 1200px;
+
+}

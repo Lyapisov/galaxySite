@@ -7,6 +7,7 @@ class SiteController{
         $newsInfo = array();
         $newsInfo = News::getNews();
 
+
         $photoGallery = array();
         $photoGallery = Photo::getPhoto();
 
