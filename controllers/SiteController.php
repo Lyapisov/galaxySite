@@ -49,4 +49,17 @@ class SiteController{
         return true;
     }
 
+    public static function actionArt(){
+
+        $newsInfo = array();
+        $newsInfo = News::getNews();
+
+
+        $photoGallery = array();
+        $photoGallery = Photo::getPhoto();
+
+        require_once ROOT . '/views/site/art.php';
+        return true;
+    }
+
 }

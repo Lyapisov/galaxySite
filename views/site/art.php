@@ -1,7 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Dima
- * Date: 22.12.2019
- * Time: 11:37
- */
+<?php require_once ROOT . '/views/loyouts/header.php';?>
+<div class="backForCabinet adminBack">
+    <div class="user user-admin">
+        <h2>ИЗО:</h2>
+        <p>
+            Страница в разработке
+        </p>
+    </div>
+</div>
+</body>
+</html>

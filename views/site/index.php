@@ -60,7 +60,7 @@
 
         <div id="sitebar">
             <ul id="menubar">
-                <li><a href="#">ИЗО</a></li>
+                <li><a href="/site/art/">ИЗО</a></li>
                 <li><a href="#">Лепка</a></li>
                 <li><a href="#">Английский</a></li>
                 <li><a href="#">Вышивание</a></li>
