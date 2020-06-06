@@ -16,7 +16,7 @@ class Router{
         $routesPath = ROOT . '/config/routes.php';
         $this->routes = include($routesPath);
     }
-    //Метод для получения запроса из адресной строки, для инициализации массива роутерс на след этапе.
+    //Метод для получения запроса из адресной строки, для инициализации массива роутера на след этапе.
     public function getURI(){
 
         if (!empty($_SERVER['REQUEST_URI'])){

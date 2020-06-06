@@ -285,6 +285,11 @@ body{
      height: 30px;
  }
 
+#submit:hover {
+    color: #6c7373;
+    background-color: #e1431f;
+}
+
 .user h2,p{
     font-size: 24px;
     display: block;
